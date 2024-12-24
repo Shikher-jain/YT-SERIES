@@ -1,0 +1,14 @@
+body{
+    background-color: rgb(167, 110, 24);
+    color: aqua;
+}
+
+header{
+    text-align: center;
+    font-size: 2em;
+}
+li{
+    font-size: larger;
+    list-style:none;
+    
+}

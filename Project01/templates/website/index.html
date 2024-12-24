@@ -1,12 +1,14 @@
+{% load static%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}My Django Project{% endblock %}</title>
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+    <title>My Django Project</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    {% comment %} <link rel="stylesheet" href="../../static/style.css"> {% endcomment %}
 </head>
 <body>
+
     <header>
         <nav>
             <ul>
@@ -16,6 +18,7 @@
             </ul>
         </nav>
     </header>
+    
 
     <main>
         {% block content %}
@@ -26,6 +29,6 @@
 
     <footer>
         <p>&copy; 2024 My Django Project. All rights reserved.</p>
-    </footer>
+    </footer> 
 </body>
 </html>
